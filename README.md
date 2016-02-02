@@ -19,7 +19,7 @@ NSMutableAttributedString * bodyAttributedText = [[NSMutableAttributedString all
                                                    initWithHTML:[htmlString dataUsingEncoding:NSUTF8StringEncoding]
                                                    documentAttributes:nil];
 
-NSString * htmlStringWithoutBaseURL = @"This is a <a href=\"/test/url">sample</a> html file";
+NSString * htmlStringWithoutBaseURL = @"This is a <a href=\"/test/url\">sample</a> html file";
 NSMutableAttributedString * bodyAttributedText = [[NSMutableAttributedString alloc]
                                                    initWithHTML:[htmlStringWithoutBaseURL dataUsingEncoding:NSUTF8StringEncoding]
                                                    baseURL:@"http://www.example.com"
